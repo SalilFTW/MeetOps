@@ -1,0 +1,263 @@
+{
+  "source_type": "email",
+  "source_id": "assignment1_email_threads",
+  "threads": [
+    {
+      "thread_id": "thread_001",
+      "subject": "Vendor List",
+      "messages": [
+        {
+          "message_id": "email_001",
+          "timestamp": "2026-09-21T09:50:00",
+          "from": "raghav.sethi@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Following up from the sync — can you send the updated vendor list today?"
+        },
+        {
+          "message_id": "email_002",
+          "timestamp": "2026-09-21T17:40:00",
+          "from": "arjun.malhotra@veridian-corp.example",
+          "to": [
+            "raghav.sethi@veridian-corp.example"
+          ],
+          "body": "Running behind, will send first thing tomorrow morning instead."
+        },
+        {
+          "message_id": "email_003",
+          "timestamp": "2026-09-22T09:15:00",
+          "from": "raghav.sethi@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "No worries, whenever you get a chance today works."
+        },
+        {
+          "message_id": "email_004",
+          "timestamp": "2026-09-22T18:30:00",
+          "from": "arjun.malhotra@veridian-corp.example",
+          "to": [
+            "raghav.sethi@veridian-corp.example"
+          ],
+          "body": "Sorry, got pulled into board prep — will send by tomorrow (Wednesday) morning for sure."
+        },
+        {
+          "message_id": "email_005",
+          "timestamp": "2026-09-23T08:45:00",
+          "from": "raghav.sethi@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Just checking — still good for this morning?"
+        }
+      ]
+    },
+    {
+      "thread_id": "thread_002",
+      "subject": "Q3 Campaign Deck",
+      "messages": [
+        {
+          "message_id": "email_006",
+          "timestamp": "2026-09-21T11:00:00",
+          "from": "neha.kapoor@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Deck’s coming together, still targeting Wednesday for your review."
+        },
+        {
+          "message_id": "email_007",
+          "timestamp": "2026-09-22T16:15:00",
+          "from": "neha.kapoor@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Heads up — shifting the review to Thursday morning instead of Wednesday, need one more day on the data slides."
+        },
+        {
+          "message_id": "email_008",
+          "timestamp": "2026-09-23T10:00:00",
+          "from": "arjun.malhotra@veridian-corp.example",
+          "to": [
+            "neha.kapoor@veridian-corp.example"
+          ],
+          "body": "Understood, Thursday morning works. What time exactly?"
+        },
+        {
+          "message_id": "email_009",
+          "timestamp": "2026-09-23T10:20:00",
+          "from": "neha.kapoor@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Let’s say 9:30 AM Thursday, before your board prep block."
+        },
+        {
+          "message_id": "email_010",
+          "timestamp": "2026-09-24T08:00:00",
+          "from": "neha.kapoor@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Deck is ready, attaching the draft ahead of our 9:30 review."
+        }
+      ]
+    },
+    {
+      "thread_id": "thread_003",
+      "subject": "Call Reschedule",
+      "messages": [
+        {
+          "message_id": "email_011",
+          "timestamp": "2026-09-21T13:00:00",
+          "from": "priya.nair@meridianlogistics.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Our scheduled call this week got bumped from our side — can you propose a new time? We’re flexible Tuesday–Thursday afternoons."
+        },
+        {
+          "message_id": "email_012",
+          "timestamp": "2026-09-22T15:00:00",
+          "from": "arjun.malhotra@veridian-corp.example",
+          "to": [
+            "priya.nair@meridianlogistics.example"
+          ],
+          "body": "Apologies for the delay — how about Wednesday 3:00 PM?"
+        },
+        {
+          "message_id": "email_013",
+          "timestamp": "2026-09-22T17:45:00",
+          "from": "priya.nair@meridianlogistics.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Wednesday 3 PM works on our end, confirmed."
+        },
+        {
+          "message_id": "email_014",
+          "timestamp": "2026-09-23T13:30:00",
+          "from": "priya.nair@meridianlogistics.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Quick check — still on for 3 PM today?"
+        },
+        {
+          "message_id": "email_015",
+          "timestamp": "2026-09-23T14:00:00",
+          "from": "arjun.malhotra@veridian-corp.example",
+          "to": [
+            "priya.nair@meridianlogistics.example"
+          ],
+          "body": "Yes, confirmed, see you at 3."
+        }
+      ]
+    },
+    {
+      "thread_id": "thread_004",
+      "subject": "Expense Variance Report",
+      "messages": [
+        {
+          "message_id": "email_016",
+          "timestamp": "2026-09-21T14:30:00",
+          "from": "divya.rao@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Starting on the July variance numbers, targeting Thursday morning for board prep as discussed."
+        },
+        {
+          "message_id": "email_017",
+          "timestamp": "2026-09-22T09:00:00",
+          "from": "arjun.malhotra@veridian-corp.example",
+          "to": [
+            "divya.rao@veridian-corp.example"
+          ],
+          "body": "Actually, can I get it by Wednesday evening instead? Want time to review before Thursday."
+        },
+        {
+          "message_id": "email_018",
+          "timestamp": "2026-09-22T09:40:00",
+          "from": "divya.rao@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Wednesday evening is tight but doable, I’ll prioritize it."
+        },
+        {
+          "message_id": "email_019",
+          "timestamp": "2026-09-23T18:00:00",
+          "from": "divya.rao@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Report attached, sent as promised."
+        },
+        {
+          "message_id": "email_020",
+          "timestamp": "2026-09-23T18:10:00",
+          "from": "arjun.malhotra@veridian-corp.example",
+          "to": [
+            "divya.rao@veridian-corp.example"
+          ],
+          "body": "Got it, thank you — exactly what I needed before tomorrow."
+        }
+      ]
+    },
+    {
+      "thread_id": "thread_005",
+      "subject": "Mumbai Office Lease Renewal",
+      "messages": [
+        {
+          "message_id": "email_021",
+          "timestamp": "2026-09-21T10:15:00",
+          "from": "facilities@veridian-corp.example",
+          "to": [
+            "All Staff"
+          ],
+          "body": "Reminder: the Mumbai office lease renewal requires an authorized signature by Friday, 25 September."
+        },
+        {
+          "message_id": "email_022",
+          "timestamp": "2026-09-22T11:00:00",
+          "from": "raghav.sethi@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example",
+            "divya.rao@veridian-corp.example"
+          ],
+          "body": "Following up from the sync — has anyone confirmed who’s signing off on the Mumbai renewal? Don’t think it’s been assigned."
+        },
+        {
+          "message_id": "email_023",
+          "timestamp": "2026-09-23T09:30:00",
+          "from": "divya.rao@veridian-corp.example",
+          "to": [
+            "raghav.sethi@veridian-corp.example",
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "Not on my end — I believe this typically sits with Facilities directly, not us."
+        },
+        {
+          "message_id": "email_024",
+          "timestamp": "2026-09-24T16:00:00",
+          "from": "facilities@veridian-corp.example",
+          "to": [
+            "All Staff"
+          ],
+          "body": "Second reminder: signature is still pending. Deadline is Friday, 25 September, end of day."
+        },
+        {
+          "message_id": "email_025",
+          "timestamp": "2026-09-24T16:45:00",
+          "from": "raghav.sethi@veridian-corp.example",
+          "to": [
+            "arjun.malhotra@veridian-corp.example"
+          ],
+          "body": "This is now one day out and still unowned — can you confirm who’s handling it?"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "source_type": "people_directory",
+  "source_id": "assignment1_people",
+  "people": [
+    {
+      "name": "Arjun Malhotra",
+      "role": "VP Sales",
+      "email": "arjun.malhotra@veridian-corp.example",
+      "relationship": "executive_user"
+    },
+    {
+      "name": "Neha Kapoor",
+      "role": "Marketing Lead",
+      "email": "neha.kapoor@veridian-corp.example",
+      "relationship": "information_source"
+    },
+    {
+      "name": "Raghav Sethi",
+      "role": "Ops Manager",
+      "email": "raghav.sethi@veridian-corp.example",
+      "relationship": "information_source"
+    },
+    {
+      "name": "Divya Rao",
+      "role": "Finance",
+      "email": "divya.rao@veridian-corp.example",
+      "relationship": "information_source"
+    },
+    {
+      "name": "Priya Nair",
+      "role": "Meridian Logistics",
+      "email": "priya.nair@meridianlogistics.example",
+      "relationship": "external_client"
+    },
+    {
+      "name": "Facilities Internal distribution list",
+      "role": "Facilities",
+      "email": "facilities@veridian-corp.example",
+      "relationship": "internal_distribution_list"
+    }
+  ]
+}
