@@ -11,6 +11,7 @@ class AIServiceError extends Error {
 
 async function request(endpoint, options = {}) {
   const url = `${config.aiServiceUrl}${endpoint}`;
+
   try {
     const res = await fetch(url, {
       headers: {
@@ -22,14 +23,19 @@ async function request(endpoint, options = {}) {
 
     if (!res.ok) {
       const errorText = await res.text();
+
       let errorJson = null;
+
       try {
         errorJson = JSON.parse(errorText);
       } catch {
-        // ignore
+        // Ignore JSON parsing failure
       }
+
       throw new AIServiceError(
-        errorJson?.detail || errorJson?.message || `AI Service request failed with status ${res.status}`,
+        errorJson?.detail ||
+          errorJson?.message ||
+          `AI Service request failed with status ${res.status}`,
         res.status,
         errorJson || errorText
       );
@@ -40,10 +46,13 @@ async function request(endpoint, options = {}) {
     if (err instanceof AIServiceError) {
       throw err;
     }
+
     throw new AIServiceError(
       `Could not communicate with AI Service at ${config.aiServiceUrl}: ${err.message}`,
       503,
-      { originalError: err.message }
+      {
+        originalError: err.message,
+      }
     );
   }
 }
@@ -63,18 +72,24 @@ export const aiClient = {
     });
   },
 
-  async extractActions({ use_llm = false, resolve_duplicates = true } = {}) {
+  async extractActions({
+    use_llm = false,
+    resolve_duplicates = true,
+  } = {}) {
     const query = new URLSearchParams({
       use_llm: String(use_llm),
       resolve_duplicates: String(resolve_duplicates),
     });
+
     return request(`/ai/actions?${query}`);
   },
 
   async resolveActions(actions) {
     return request("/ai/resolve", {
       method: "POST",
-      body: JSON.stringify({ actions }),
+      body: JSON.stringify({
+        actions,
+      }),
     });
   },
 
@@ -84,6 +99,15 @@ export const aiClient = {
       body: JSON.stringify({
         actions,
         brief_date: briefDate,
+      }),
+    });
+  },
+
+  async askQuestion(question) {
+    return request("/ai/ask", {
+      method: "POST",
+      body: JSON.stringify({
+        question,
       }),
     });
   },

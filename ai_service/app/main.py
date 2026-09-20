@@ -1,6 +1,8 @@
 from datetime import date
 from typing import Optional
-
+from app.models.qa import QuestionRequest
+from app.graph.runner import run_meetops_agent
+from app.services.qa_service import answer_question
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
 
@@ -119,3 +121,18 @@ def create_brief(request: BuildBriefRequest):
         reference_date=ref_date,
     )
     return brief
+@app.post("/ai/ask")
+def ask_question(request: QuestionRequest):
+    result = run_meetops_agent(
+        use_llm=False,
+    )
+
+    actions = result.get(
+        "canonical_actions",
+        [],
+    )
+
+    return answer_question(
+        question=request.question,
+        actions=actions,
+    )
