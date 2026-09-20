@@ -11,9 +11,14 @@ from app.services.llm_source_processor import (
     process_assignment1_sources_with_llm,
 )
 
+from app.services.action_resolution import (
+    resolve_actions,
+)
+
 
 def extract_actions(
     use_llm: bool = False,
+    resolve_duplicates: bool = False,
 ) -> list[Action]:
     """
     Extract actions.
@@ -23,17 +28,33 @@ def extract_actions(
 
     use_llm=True:
         LangChain + Groq extraction.
+
+    resolve_duplicates=True:
+        Run Phase 4 deduplication and return
+        canonical actions.
     """
 
     if not use_llm:
-        return extract_assignment1_actions()
+        actions = extract_assignment1_actions()
 
-    results = process_assignment1_sources_with_llm()
+    else:
+        results = (
+            process_assignment1_sources_with_llm()
+        )
 
-    actions: list[Action] = []
+        actions = []
 
-    for source_actions in results.values():
-        actions.extend(source_actions)
+        for source_actions in results.values():
+            actions.extend(
+                source_actions
+            )
+
+    if resolve_duplicates:
+        result = resolve_actions(
+            actions
+        )
+
+        return result.canonical_actions
 
     return actions
 
